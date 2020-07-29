@@ -289,18 +289,20 @@ exports.config = {
      */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-    afterTest: function (test) {
+    afterTest: function (test, { error, passed }) {
         // if test passed, ignore, else take and save screenshot.
-        if (test.passed) {
-            return;
-        }
         if (!fs.existsSync(SCREENSHOT_DIR)) {
             fs.mkdirSync(SCREENSHOT_DIR);
         }
-        // get current test title and clean it, to use it as file name
-        const filename = encodeURIComponent(test.title.replace(/\s+/g, '-'));
-        const filePath = SCREENSHOT_DIR + `/${filename}.png`;
-        browser.saveScreenshot(filePath);
-        console.log('\n\tScreenshot location:', filePath, '\n');
+        if (passed) {
+            return;
+        } else if (!passed) {
+            // get current test title and clean it, to use it as file name
+            const filename = encodeURIComponent(test.title.replace(/\s+/g, '-'));
+            const filePath = SCREENSHOT_DIR + `/${filename}.png`;
+            browser.saveScreenshot(filePath);
+            console.log('\n\tScreenshot location:', filePath, '\n');
+            console.log("Error: ", error);
+        }
     }
 }
