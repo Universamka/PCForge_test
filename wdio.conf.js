@@ -1,3 +1,11 @@
+const path = require('path');
+const fs = require('fs');
+const ROOT_DIR = path.resolve(__dirname);
+const SPECS_DIR = path.join(ROOT_DIR, 'specs');
+const OUTPUT_DIR = path.join(ROOT_DIR, 'output');
+const SCREENSHOT_DIR = path.join(OUTPUT_DIR, 'screenshots');
+const testPattern = path.relative(ROOT_DIR, path.join(SPECS_DIR, '**', '*_test.js'));
+
 exports.config = {
     //
     // ====================
@@ -16,9 +24,8 @@ exports.config = {
     // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
-    specs: [
-        './test/specs/**/*.js'
-    ],
+    outputDir: OUTPUT_DIR,
+    specs: [testPattern],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -39,18 +46,18 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true
@@ -93,7 +100,7 @@ exports.config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 60000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -107,7 +114,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
+    chromeDriverLogs: path.join(OUTPUT_DIR, 'ch-driver.log'),
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -125,10 +132,27 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec'],
+    reporters: ['spec', 'junit', 'allure'],
+    reportersOptions: {
+        allure: {
+            outputDir: path.join(OUTPUT_DIR, './allure-results'),
+            disableWebdriverStepReporting: true,
+            disableWebdriverScreenshotsReporting: false
+        },
+        junit: {
+            outputDir: path.join(OUTPUT_DIR, 'test_result'),
+            errorOptions: {
+                error: 'message',
+                failure: 'message',
+                stacktrace: 'stack'
+            }
+        }
+    },
+    coloredLogs: true,
+    screenshotPath: path.join(OUTPUT_DIR, 'screenshots'),
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -259,10 +283,24 @@ exports.config = {
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
     /**
-    * Gets executed when a refresh happens.
-    * @param {String} oldSessionId session ID of the old session
-    * @param {String} newSessionId session ID of the new session
-    */
+     * Gets executed when a refresh happens.
+     * @param {String} oldSessionId session ID of the old session
+     * @param {String} newSessionId session ID of the new session
+     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
+    afterTest: function (test) {
+        // if test passed, ignore, else take and save screenshot.
+        if (test.passed) {
+            return;
+        }
+        if (!fs.existsSync(SCREENSHOT_DIR)) {
+            fs.mkdirSync(SCREENSHOT_DIR);
+        }
+        // get current test title and clean it, to use it as file name
+        const filename = encodeURIComponent(test.title.replace(/\s+/g, '-'));
+        const filePath = SCREENSHOT_DIR + `/${filename}.png`;
+        browser.saveScreenshot(filePath);
+        console.log('\n\tScreenshot location:', filePath, '\n');
+    }
 }
