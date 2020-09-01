@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
     "@wdio/allure-reporter": "^6.3.0",
     "@wdio/cli": "^6.3.5",
     "@wdio/junit-reporter": "^6.3.4",
@@ -26,6 +30,7 @@
     "chromedriver": "^84.0.1",
     "eslint": "^7.5.0",
     "eslint-plugin-wdio": "^6.0.12",
+    "prettier": "^2.1.1",
     "wdio-chromedriver-service": "^6.0.3"
   }
 }

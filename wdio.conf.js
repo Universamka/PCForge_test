@@ -6,6 +6,8 @@ const OUTPUT_DIR = path.join(ROOT_DIR, 'output');
 const SCREENSHOT_DIR = path.join(OUTPUT_DIR, 'screenshots');
 const testPattern = path.relative(ROOT_DIR, path.join(SPECS_DIR, '**', '*_test.js'));
 
+const mochaTimeout = process.env.DEBUG ? 99999999 : 60000;
+
 exports.config = {
     //
     // ====================
@@ -158,7 +160,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        compilers: ['js:@babel/register'],
+        timeout: mochaTimeout
     },
     //
     // =====
@@ -219,8 +222,11 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+    beforeTest: function () {
+        const chai = require('chai');
+        global.expect = chai.expect;
+        global.assert = chai.assert;
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
@@ -289,14 +295,12 @@ exports.config = {
      */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-    afterTest: function (test, { error, passed }) {
+    afterTest: function (test, { error, result, duration, passed, retries }) {
         // if test passed, ignore, else take and save screenshot.
         if (!fs.existsSync(SCREENSHOT_DIR)) {
             fs.mkdirSync(SCREENSHOT_DIR);
         }
-        if (passed) {
-            return;
-        } else if (!passed) {
+        if (!passed) {
             // get current test title and clean it, to use it as file name
             const filename = encodeURIComponent(test.title.replace(/\s+/g, '-'));
             const filePath = SCREENSHOT_DIR + `/${filename}.png`;
