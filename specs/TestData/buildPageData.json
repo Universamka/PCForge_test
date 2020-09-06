@@ -1,0 +1,16 @@
+{
+    "progress":{
+        "cpu": "",
+        "gpu": "",
+        "ram": "",
+        "mother": "",
+        "power": "",
+        "hdd": "",
+        "ssd": ""
+
+    },
+
+    "cpuName":"Intel Celeron D 356 @ 3.33GHz",
+    "gpuName":"FirePro 3D V3700"
+
+}

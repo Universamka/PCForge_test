@@ -9,6 +9,11 @@ const loginData = require('../TestData/credentials.json');
 //Menu
 const MenuAction = require('../Actions/menuAction');
 const menuActions = new MenuAction();
+//Build
+const BuildAction = require('../Actions/buildAction');
+const buildActions = new BuildAction();
+const buildData = require('../TestData/buildPageData.json');
+
 
 
 
@@ -28,6 +33,17 @@ describe('Build page', () => {
     });
 
     it('Create setup', () =>{
+        buildActions.resetSetup();
+
+        buildActions.openCpuPanel();        
+        buildActions.goToPage();
+        buildActions.waitForSpinner();
+        buildActions.add();
+
+        buildActions.openGpuPanel();
+        buildActions.searchGpu(buildData.gpuName);
+        buildActions.waitForSpinner();
+        buildActions.add();
         browser.pause(3000);
     });
 
