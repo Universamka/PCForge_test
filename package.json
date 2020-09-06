@@ -24,7 +24,6 @@
     "@wdio/sync": "^6.3.3",
     "allure-commandline": "^2.13.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chromedriver": "^84.0.1",
