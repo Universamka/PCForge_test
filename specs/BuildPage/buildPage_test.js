@@ -6,6 +6,10 @@ const LoginAction = require('../Actions/loginAction');
 const loginActions = new LoginAction();
 const loginData = require('../TestData/credentials.json');
 
+//Menu
+const MenuAction = require('../Actions/menuAction');
+const menuActions = new MenuAction();
+
 
 
 function userLogin(){
@@ -19,6 +23,7 @@ describe('Build page', () => {
     before(function(){
         browser.url(pages.loginPage);
         userLogin();
+        menuActions.goBuildPage();
                 
     });
 
