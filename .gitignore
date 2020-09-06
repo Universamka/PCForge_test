@@ -4,3 +4,4 @@ debug.log
 debug.json
 /output/
 /allure-results/
+specs/TestData/credentials.json
