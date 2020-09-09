@@ -32,14 +32,14 @@ function uploadSetupImage(){
 
 describe('Build page', () => {    
 
-    before(function(){
+    before(() => {
         browser.url(pages.loginPage);
         userLogin();
         menuActions.goBuildPage();
                 
     });
 
-    it('Create setup', () =>{
+    it('Create setup', async () =>{
         buildActions.resetSetup();
 
         buildActions.openMotherPanel();
@@ -71,7 +71,7 @@ describe('Build page', () => {
        
        buildActions.setSetupName('Name');
        buildActions.setSetupDescription('Descriptionnnnnnnn');
-       buildActions.uploadSetupImage('../TestData/setup.jpg');
+       await buildActions.uploadSetupImage('../TestData/setup.jpg');
 
        
         /*** 

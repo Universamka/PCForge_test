@@ -128,13 +128,14 @@ class BuildAction{
 
   
 
-    uploadSetupImage(file){
-        objects.wSetupImage.waitForExist(5000);
-        //console.log(objects.wSetupImage.isExisting());
-        console.log(objects.wSetupImage.isEnabled());
+    async uploadSetupImage(file) {
+        const puppeteer = browser.getPuppeteer()
+        const page = (await puppeteer.pages())[0]
+        console.log(await page.title())
+
+        const input = await page.$(objects.wSetupImage);
         const filePath = path.join(__dirname, file);
-        const remoteFilePath = browser.uploadFile(filePath);
-        objects.wSetupImage.setValue(remoteFilePath);
+        input.uploadFile(filePath);
     }
 
     

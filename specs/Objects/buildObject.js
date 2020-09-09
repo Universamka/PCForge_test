@@ -98,7 +98,7 @@ class BuildObject{
     get wSetupCloseButton() {return $('//button[@class="MuiButtonBase-root MuiButton-root MuiButton-outlined styles_btn__47jU7 styles_button__1nhaW styles_btnSecondary__3untI"]')};
     get wSetupTitle() {return $('//input[@id="setup_title"]')};
     get wSetupDescription() {return $('//textarea[@id="setup_description"]')};
-    get wSetupImage() {return $('//input[@id="uploadFile"]')};
+    get wSetupImage() {return $('input[type="file"]')};
     
 
 }
