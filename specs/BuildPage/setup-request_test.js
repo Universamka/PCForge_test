@@ -24,12 +24,6 @@ function userLogin(){
     loginActions.login();
 }
 
-
-function uploadSetupImage(){
-    const remoteFilePath = browser.uploadFile('../TestData/setup.jpg');
-    $('#uploadFile').setValue(remoteFilePath);
-}
-
 describe('Build page', () => {    
 
     before(() => {
@@ -49,7 +43,7 @@ describe('Build page', () => {
         buildActions.openCpuPanel();  
         buildActions.addCpu(); 
         buildActions.waitForSpinner();
-       
+     
 
         buildActions.openGpuPanel();
         buildActions.addGpu();
@@ -74,7 +68,7 @@ describe('Build page', () => {
        await buildActions.uploadSetupImage('../TestData/setup.jpg');
 
        
-        /*** 
+           /***
        
         buildActions.openPowerPanel();        
        // buildActions.waitForSpinner();

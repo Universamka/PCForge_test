@@ -2,12 +2,12 @@ class BuildObject{
     
 
     // The buttons that are on top of the build block 
-    get resetSetupButton() {return $('//button[@class="MuiButtonBase-root MuiButton-root MuiButton-outlined styles_btn__47jU7"]/span[text()="Reset Setup"]')};
-    get resetSetupFilters() {return $('//button[@class="MuiButtonBase-root MuiButton-root MuiButton-outlined styles_btn__47jU7"]/span[text()="Reset Filters"]')};
-    get saveSetupButton() {return $('//button[@class="MuiButtonBase-root MuiButton-root MuiButton-outlined styles_btn__47jU7 styles_btnPrimary__1l_M-"]')};
+    get resetSetupButton() {return $('//div[@class="MuiBox-root jss11 styles_builderTitleButtons__1hp7B"]//span[text()="Reset Filters"]')};
+    get resetSetupFilters() {return $('//div[@class="MuiBox-root jss11 styles_builderTitleButtons__1hp7B"]//span[text()="Reset Filters"]')};
+    get saveSetupButton() {return $('//div[@class="MuiBox-root jss11 styles_builderTitleButtons__1hp7B"]//span[text()="Save Setup"]')};
 
 
-    get buildProgress() {return $('//div[@class="MuiLinearProgress-root MuiLinearProgress-colorPrimary styles_progressBar__2S-Km MuiLinearProgress-determinate"]')};
+    get buildProgress() {return $('//div[@class="MuiBox-root jss20 styles_progressWrapper__13GK7"]//div[@role="progressbar"]')};
    
 
     //Headers
@@ -20,13 +20,14 @@ class BuildObject{
     get ssdHeader() {return '//div[@id="panelssd-header"]'};
    
     // Panels
-    get cpuPanel() {return $(this.cpuHeader)};
-    get gpuPanel() {return $(this.gpuHeader)};
-    get ramPanel() {return $(this.ramHeader)};
-    get motherPanel() {return $(this.motherHeader)};
-    get powerPanel() {return $(this.powerHeader)};
-    get hddPanel() {return $(this.hddHeader)};
-    get ssdPanel() {return $(this.ssdHeader)};    
+    get openButton() {return '//span[@class="MuiIconButton-label"]'};
+    get cpuPanel() {return $(this.cpuHeader + this.openButton)};
+    get gpuPanel() {return $(this.gpuHeader + this.openButton)};
+    get ramPanel() {return $(this.ramHeader + this.openButton)};
+    get motherPanel() {return $(this.motherHeader + this.openButton)};
+    get powerPanel() {return $(this.powerHeader + this.openButton)};
+    get hddPanel() {return $(this.hddHeader + this.openButton)};
+    get ssdPanel() {return $(this.ssdHeader + this.openButton)};    
 
     // Hardware names on panels
     get namePanelField() {return '//p[@class="MuiTypography-root styles_nameComponent__29USL MuiTypography-body1"]'}
@@ -42,6 +43,7 @@ class BuildObject{
     // Fields have this index only when all fields are selected and displayed in the summary block.    
     get summaryBlock() {return '//div[@class="MuiBox-root jss13 styles_componentWrapper__2QOPH"]'};
     get hardwareTitleSummary() {return '//h6[@class="MuiTypography-root MuiTypography-subtitle1"]'};
+    
     get cpuNameSummary() {return $(this.summaryBlock + '/div[1]' + this.hardwareTitleSummary)};
     get gpuNameSummary() {return $(this.summaryBlock + '/div[2]' + this.hardwareTitleSummary)};
     get ramNameSummary() {return $(this.summaryBlock + '/div[3]' + this.hardwareTitleSummary)};

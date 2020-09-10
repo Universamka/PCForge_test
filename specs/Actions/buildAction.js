@@ -131,8 +131,7 @@ class BuildAction{
     async uploadSetupImage(file) {
         const puppeteer = browser.getPuppeteer()
         const page = (await puppeteer.pages())[0]
-        console.log(await page.title())
-
+        
         const input = await page.$(objects.wSetupImage);
         const filePath = path.join(__dirname, file);
         input.uploadFile(filePath);
