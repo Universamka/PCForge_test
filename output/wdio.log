@@ -1,0 +1,9 @@
+2020-09-10T10:32:22.976Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-09-10T10:32:23.207Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-10T10:32:23.209Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js
+2020-09-10T10:32:25.401Z INFO @wdio/cli: [0-0] SKIPPED in chrome - /specs/Journey "A"/buildSetupComment_test.js
+2020-09-10T10:32:25.401Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-10T10:32:25.404Z INFO @wdio/local-runner: Start worker 0-1 with arg: wdio.conf.js
+2020-09-10T10:33:47.102Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-09-10T10:33:47.108Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-09-10T10:33:47.361Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

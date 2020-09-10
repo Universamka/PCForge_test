@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Edit_user_profile_add_favorite_game_home_news_log_out" timestamp="2020-09-10T13:32:30" time="76.489" tests="3" failures="0" errors="3" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Edit user profile, add favorite game, home-news-log out"/>
+      <property name="capabilities" value="chrome.85_0_4183_102.macosx"/>
+      <property name="file" value="./specs/Journey &quot;B&quot;/userDataEdit_test.js"/>
+    </properties>
+    <testcase classname="chrome.85_0_4183_102.macosx.Edit_user_profile_add_favorite_game_home_news_log_out" name="Edit_user_profile" time="8.955">
+      <error message="userName is not defined"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"img[alt = \"user profile\"]"}
+RESULT: {"using":"css selector","value":"img[alt = \"user profile\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"img[alt = \"user profile\"]"}
+RESULT: {"using":"css selector","value":"img[alt = \"user profile\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"img[alt = \"user profile\"]"}
+RESULT: {"using":"css selector","value":"img[alt = \"user profile\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"img[alt = \"user profile\"]"}
+RESULT: {"using":"css selector","value":"img[alt = \"user profile\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/9a7f2011-b9e8-4608-abb3-15e63850cde5/click - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/59825331-bd43-4d93-bce6-f0b047a58570/click - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input[placeholder = \"Name\"]"}
+RESULT: {"using":"css selector","value":"input[placeholder = \"Name\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/8a5cbfdf-6b7e-4a38-95cf-92232fcc1da8/clear - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input[placeholder = \"Name\"]"}
+RESULT: {"using":"css selector","value":"input[placeholder = \"Name\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/8a5cbfdf-6b7e-4a38-95cf-92232fcc1da8/clear - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/8a5cbfdf-6b7e-4a38-95cf-92232fcc1da8/value - {"text":"Bruce Willis"}
+RESULT: {"text":"Bruce Willis"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input[placeholder = \"Email\"]"}
+RESULT: {"using":"css selector","value":"input[placeholder = \"Email\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/03a1a676-b4fc-414a-a53c-48dbef085d53/clear - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input[placeholder = \"Email\"]"}
+RESULT: {"using":"css selector","value":"input[placeholder = \"Email\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/03a1a676-b4fc-414a-a53c-48dbef085d53/clear - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/03a1a676-b4fc-414a-a53c-48dbef085d53/value - {"text":"longlongemail4@gmail.com"}
+RESULT: {"text":"longlongemail4@gmail.com"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.styles_btn__47jU7.styles_btnPrimary__1l_M-"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.styles_btn__47jU7.styles_btnPrimary__1l_M-"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/59825331-bd43-4d93-bce6-f0b047a58570/click - {}
+RESULT: {}
+COMMAND: GET /session/5e6292ec3aba6920f984777542cb02e2/screenshot - {}
+RESULT: {}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+ReferenceError: userName is not defined
+    at Context.<anonymous> (/Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js:46:28)
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.85_0_4183_102.macosx.Edit_user_profile_add_favorite_game_home_news_log_out" name="Add_favorite_game_to_user_s_profile_game_list" time="60.009">
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;Edit user profile, add favorite game, home-news-log out Add favorite game to user's profile game list&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (/Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey &quot;B&quot;/userDataEdit_test.js)"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-contained"}
+RESULT: {"using":"css selector","value":"button.MuiButtonBase-root.MuiButton-root.MuiButton-contained"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/4a0092ff-05ed-4125-ab1f-aec628d9ff23/click - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input#game"}
+RESULT: {"using":"css selector","value":"input#game"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/1a11bdb9-b810-4117-a5a9-0715ca05d0c9/click - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"input#game"}
+RESULT: {"using":"css selector","value":"input#game"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/1a11bdb9-b810-4117-a5a9-0715ca05d0c9/clear - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element/1a11bdb9-b810-4117-a5a9-0715ca05d0c9/value - {"text":"303"}
+RESULT: {"text":"303"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/element - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Edit user profile, add favorite game, home-news-log out Add favorite game to user's profile game list" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (/Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js)
+    at Test.Runnable._timeoutError (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/mocha/lib/runnable.js:426:10)
+    at Timeout.<anonymous> (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/mocha/lib/runnable.js:238:24)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.85_0_4183_102.macosx.Edit_user_profile_add_favorite_game_home_news_log_out" name="Home_News_Log_out" time="0.047">
+      <error message="Cannot read property 'click' of undefined"/>
+      <system-out>
+        <![CDATA[
+COMMAND: GET /session/5e6292ec3aba6920f984777542cb02e2/screenshot - {}
+COMMAND: GET /session/5e6292ec3aba6920f984777542cb02e2/se/log/types - {}
+RESULT: {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/se/log - {"type":"browser"}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/se/log - {"type":"driver"}
+RESULT: {"type":"browser"}
+RESULT: {"type":"driver"}
+COMMAND: DELETE /session/5e6292ec3aba6920f984777542cb02e2 - {}
+COMMAND: POST /session/5e6292ec3aba6920f984777542cb02e2/elements - {"using":"css selector","value":"div.styles_selectOptionsContainer[tabindex = \"0\"]"}
+RESULT: {}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+TypeError: Cannot read property 'click' of undefined
+    at Context.<anonymous> (/Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js:64:35)
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

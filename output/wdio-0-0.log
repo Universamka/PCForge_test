@@ -1,0 +1,2 @@
+2020-09-10T10:32:23.628Z INFO @wdio/local-runner: Run worker command: run
+2020-09-10T10:32:23.639Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol

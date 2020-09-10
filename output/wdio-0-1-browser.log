@@ -1,0 +1,3 @@
+{"level":"SEVERE","message":"http://pcforge.s3-website-us-west-2.amazonaws.com/login - Failed to load resource: the server responded with a status of 404 (Not Found)","source":"network","timestamp":1599733950863}
+{"level":"SEVERE","message":"https://pcforge.herokuapp.com/api/auth/logged_in - Failed to load resource: the server responded with a status of 400 (Bad Request)","source":"network","timestamp":1599733956692}
+{"level":"WARNING","message":"http://pcforge.s3-website-us-west-2.amazonaws.com/static/js/main.e91006ae.chunk.js 0 WebSocket connection to 'ws://pcforge.herokuapp.com/' failed: WebSocket is closed before the connection is established.","source":"javascript","timestamp":1599733958382}

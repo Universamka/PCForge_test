@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599730623983' stop='1599730625978'>
+    <name>Your Playground test suite</name>
+    <title>Your Playground test suite</title>
+    <test-cases>
+        <test-case start='1599730623984' status='passed' stop='1599730625978'>
+            <name>Your Playground test</name>
+            <title>Your Playground test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1599730624073' status='passed' stop='1599730625459'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8ca30b14-64ab-46a3-aecb-7f61fb0624d2-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1599730625461' status='passed' stop='1599730625976'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='0581557d-f6c0-460d-933b-c0ffdca81b93-attachment.png' type='image/png' size='96571'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
