@@ -1,0 +1,39 @@
+2020-09-10T09:37:09.344Z INFO @wdio/local-runner: Run worker command: run
+2020-09-10T09:37:09.357Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-10T09:37:10.263Z WARN @wdio/mocha-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): /Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js
+ Error:  TypeError: /Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js: Cannot read property 'bindings' of null
+    at Scope.moveBindingTo (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/scope/index.js:929:13)
+    at BlockScoping.updateScopeInfo (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:364:17)
+    at BlockScoping.run (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:330:12)
+    at PluginPass.BlockStatementSwitchStatementProgram (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:70:24)
+    at newFn (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/visitors.js:175:21)
+    at NodePath._call (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:55:20)
+    at NodePath.call (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:42:17)
+    at NodePath.visit (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:92:31)
+    at TraversalContext.visitQueue (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/context.js:112:16)
+    at TraversalContext.visitSingle (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/context.js:84:19)
+2020-09-10T09:37:10.288Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-10T09:37:10.290Z INFO webdriver: [POST] http://localhost:9515/session
+2020-09-10T09:37:10.290Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2020-09-10T09:37:12.226Z ERROR @wdio/runner: TypeError: /Users/germi/Desktop/atpcforge/PCForge_test/specs/Journey "B"/userDataEdit_test.js: Cannot read property 'bindings' of null
+    at Scope.moveBindingTo (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/scope/index.js:929:13)
+    at BlockScoping.updateScopeInfo (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:364:17)
+    at BlockScoping.run (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:330:12)
+    at PluginPass.BlockStatementSwitchStatementProgram (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/babel-plugin-transform-es2015-block-scoping/lib/index.js:70:24)
+    at newFn (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/visitors.js:175:21)
+    at NodePath._call (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:55:20)
+    at NodePath.call (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:42:17)
+    at NodePath.visit (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/path/context.js:92:31)
+    at TraversalContext.visitQueue (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/context.js:112:16)
+    at TraversalContext.visitSingle (/Users/germi/Desktop/atpcforge/PCForge_test/node_modules/@babel/traverse/lib/context.js:84:19)
+2020-09-10T09:37:12.228Z INFO webdriver: COMMAND deleteSession()
+2020-09-10T09:37:12.229Z INFO webdriver: [DELETE] http://localhost:9515/session/49f55b6de8ccc5e2c9196554c498d54a

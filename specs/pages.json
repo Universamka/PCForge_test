@@ -1,6 +1,8 @@
 {
     "loginPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/login",
+    "userPage": "http://pcforge.s3-website-us-west-2.amazonaws.com/user/179",
     "homePage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/",
-    "buildPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/builder"
+    "buildPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/builder",
+    "newsPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/news"
 
 }
