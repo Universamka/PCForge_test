@@ -1,0 +1,6 @@
+{
+    "loginPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/login",
+    "homePage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/",
+    "buildPage" : "http://pcforge.s3-website-us-west-2.amazonaws.com/builder"
+
+}
