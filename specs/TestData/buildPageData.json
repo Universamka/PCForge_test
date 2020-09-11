@@ -1,0 +1,21 @@
+{
+    "progress":{
+        "cpu": "",
+        "gpu": "",
+        "ram": "",
+        "mother": "",
+        "power": "",
+        "hdd": "",
+        "ssd": ""
+
+    },
+
+    "setup":{
+        "name":"My cool setup", 
+        "description": "description description description"
+    },
+
+    "cpuName":"Intel Celeron D 356 @ 3.33GHz",
+    "gpuName":"FirePro 3D V5800"
+
+}
